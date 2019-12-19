@@ -19,7 +19,7 @@ class App extends Component {
       item: e.target.value
     });
   };
-
+  handleConfirmed = event => alert("Criado");
   handleTitulo = (e) => {
     this.setState({
       titulo: e.target.value
@@ -85,6 +85,7 @@ class App extends Component {
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
               editItem={this.state.editItem}
+              handleConfirmed={this.handleConfirmed}
             />
             
             

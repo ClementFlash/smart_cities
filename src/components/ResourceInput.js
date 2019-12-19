@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 export default class ResourceInput extends Component {
   render() {
-    const { titulo, item, handleTitulo, handleChange, handleSubmit, editItem } = this.props;
+    const { titulo, item, handleTitulo, handleChange, handleSubmit, editItem, handleConfirm } = this.props;
     return (
       <>
       <h1 className="text-capitalize text-center">Smart Cities</h1>
@@ -60,6 +60,7 @@ export default class ResourceInput extends Component {
             </div> */}
           <button
             type="submit"
+            
             className={
               editItem
                 ? "btn btn-block btn-success mt-3"
